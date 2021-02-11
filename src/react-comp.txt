@@ -1,0 +1,57 @@
+library - UI Components
+
+"declarative" -> UI for every state should be declare in advance
+
+"component everywhere"
+
+types to create component : 
+1) functional
+2) classbased
+
+
+classbased : 
+(a js class extends react component class and having render method)
+
+1) import React and Component from react package
+2) create a class (class name must be same as file name) and extends to Component class
+3) create render method inside this class
+4) return jsx from render method.
+
+
+component => UI + data + logic
+
+
+UI => jsx (javascript xml) => like html (having some specific rules)
+    1) u can write only one tag at top level
+    2) every tag must be closed
+    3) can not use class keyword for applying css, instead of class use "className".
+    4) can not use "for", instead of for use "htmlFor"
+
+    5) we can use js variable and expressions(function call, operation) in jsx using {}
+    6) we can render conditionally using ternary operator (? : )
+
+data => 
+    props(outside data)
+
+    state(inside data)
+        => it holds the current state of the component
+
+        to use state in class based component : 
+            1) create constructor
+                constructor(props){
+                    super(props)
+                }
+            2) create state object inside constructor
+                constructor(props){
+                    super(props)
+                    this.state ={
+
+                    }
+                }
+        to change the value of state :
+            use this.setState({})
+
+
+logic => 
+        1) add Event Listners on elements
+        2) pass function to it

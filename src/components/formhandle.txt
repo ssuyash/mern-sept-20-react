@@ -1,0 +1,8 @@
+1) create state for handling form value.
+2) handle onChange for every form field
+
+
+
+> when click on + button
+> get the   value of input filed 
+> set the value inside todo array
