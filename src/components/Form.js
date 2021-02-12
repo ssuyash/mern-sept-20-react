@@ -22,13 +22,12 @@ export default class Form extends Component {
 
     fetchData=()=>{
         axios.get('https://jsonplaceholder.typicode.com/todos').then((res)=>{
-            console.log(res.data)
             let dataTodos = res.data.map(todo=>todo.title)
             this.setState({todos:dataTodos})
         }).catch((err)=>{
-
+            alert("something went wrong")
+            console.log(err)
         })
-
     }
     
     render() {

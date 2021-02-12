@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 // import Greet from './components/Greet'
 import Form from './components/Form'
 import Balancesheet from './components/Balancesheet'
+import Moviesearch from './components/Moviesearch'
 
 
 export default class App extends Component{
@@ -13,7 +14,7 @@ export default class App extends Component{
 
    return (
     <div>
-      <Form/>     
+      <Moviesearch/>     
     </div>
 
   
