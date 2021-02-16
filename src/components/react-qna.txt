@@ -1,0 +1,40 @@
+1) How to create a react project ?
+>> npx creact-react-app app-name
+
+2) Type of React Component
+    >> Class Based
+    >> Function Based
+
+3) How to create a class based Component ?
+ 
+ >> import React & Component from react package
+ >> make a class and extend it to Component
+ >> create a render method and return jsx from this method
+
+4) What are the basic rules of JSX?
+
+>> Every Component must be closed.
+>> use className instead of class.
+>> use htmlFor instead of for.
+>> only return one tag at top level
+
+
+5) how to use props in a Component ?
+ >> inside a class component use this.props to get props values
+ >> for passign a prop we pass it from the place where we are using this component.
+    eg. <MyComponent propKey={propValue}/>
+
+6) how to use state inside a class component?
+ >> create a constructor inside the class having one object name "state"
+ >> to get the value of state, we use this.state.stateKey
+
+7) How to change state value ?
+ >> using this.setState({})
+
+8) How to render a list ?
+ >> using Array.map() we can render a list.
+ >> we use a unique prop named "key" for every item.
+
+
+9) How to make an http call ?
+  >> using axios
