@@ -5,6 +5,7 @@ import Form from './components/Form'
 import Balancesheet from './components/Balancesheet'
 import Moviesearch from './components/Moviesearch'
 import Calculator from './components/Calculator'
+import Dicegame from './components/Dicegame'
 import './assets/css/style.css'
 
 
@@ -16,7 +17,7 @@ export default class App extends Component{
 
    return (
     <div>
-      <Calculator/>     
+      <Dicegame/>     
     </div>
 
   
