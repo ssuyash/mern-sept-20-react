@@ -1,0 +1,47 @@
+Mounting phase : 
+(when component comes into picture)
+
+constuctor : 
+    (it takes one parameter named props)
+    (return nothing)
+    1) set initial states
+    2) binding of this 
+    
+getDerivedStateFromProps : 
+    (it takes two params - props & state)
+    (returns new object to change in state)
+    (return null if don't want to chnage anything in state)
+    1) when we want to set the value of prop into state then use this
+    2) it changes the state
+
+
+render :
+    it returns jsx
+
+componentDidMount : 
+    this methods runs when component is mounted.
+    all side effects codes we will write here.
+
+    > dom manipulation
+    > api(http) calls / network calls
+
+
+
+
+Update Phase:
+(new props, setState, forceUpdate)
+
+1.) static getDerivedStateFromProps(props, state)
+2.) shouldComponentUpdate(nextProps, nextState) => return boolean
+3.) render() => return jsx
+4.) getSnapshotBeforeUpdate(prevProps, prevState)
+5.) componentDidUpdate(prevProps, prevState, snapshot)
+
+
+
+Unmounting Phase: 
+1.) componentWillMount()
+
+
+
+Error Handling : 
