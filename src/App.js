@@ -9,7 +9,7 @@ import Dicegame from './components/Dicegame'
 import './assets/css/style.css'
 import Lifecycle from './components/Lifecycle'
 import Todos from './components/Todos'
-
+import Calculate from './components/Calculate'
 
 export default class App extends Component{
   
@@ -26,19 +26,20 @@ constructor(props) {
  
  render(){
    return (
-    <div>
-      <div>{this.state.count}</div>
-      <button onClick={(e)=>{
-        let prevCount = this.state.count
-        prevCount++
-        this.setState({count:prevCount})
-      }}>increment</button>
+     <Calculate/>
+    // <div>
+    //   <div>{this.state.count}</div>
+    //   <button onClick={(e)=>{
+    //     let prevCount = this.state.count
+    //     prevCount++
+    //     this.setState({count:prevCount})
+    //   }}>increment</button>
 
-      {this.state.showLifeCycle ?  <Lifecycle/>  : null}
-         <button onClick={
-           ()=>this.setState({showLifeCycle:false})
-         }>Hide Lifecycle</button>
-    </div>
+    //   {this.state.showLifeCycle ?  <Lifecycle/>  : null}
+    //      <button onClick={
+    //        ()=>this.setState({showLifeCycle:false})
+    //      }>Hide Lifecycle</button>
+    // </div>
 
   
    )
